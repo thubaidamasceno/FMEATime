@@ -1,0 +1,11 @@
+{
+  "rplc": {
+    "front/src/modules.js": {
+      "import": "\nimport upload, {uploadCommon} from './mod/upload/reducers'\nimport {routesupload,menuitemsupload} from './mod/upload';\n",
+      "modules": "\nred={...red,upload};\nrc=[...rc,uploadCommon];\nsty=[...sty,'/upload/pmodstyle.css'];\nrot=[...rot,...routesupload];\nmen=[...men,...menuitemsupload];\n"
+    },
+    "backend/modules.js": {
+      "modules": "\nmodels=[...models,'./mod/upload/pai1','./mod/upload/filho1'];\napi=[...api,['/uploads','upload']];\n"
+    }
+  }
+}

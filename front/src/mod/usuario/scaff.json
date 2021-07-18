@@ -1,0 +1,11 @@
+{
+  "rplc": {
+    "front/src/modules.js": {
+      "import": "\nimport usuario, {usuarioCommon} from './mod/usuario/reducers'\nimport {routesusuario,menuitemsusuario} from './mod/usuario';\n",
+      "modules": "\nred={...red,usuario};\nrc=[...rc,usuarioCommon];\nsty=[...sty,'/usuario/pmodstyle.css'];\nrot=[...rot,...routesusuario];\nmen=[...men,...menuitemsusuario];\n"
+    },
+    "backend/modules.js": {
+      "modules": "\nmodels=[...models,'./mod/usuario/usuario','./mod/usuario/usrupdate'];\napi=[...api,['/usuarios','usuario']];\n"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rplc": {
+    "front/src/modules.js": {
+      "import": "\nimport {reducermod as reducermodfmea, reducercommon as reducercommonfmea} from './mod/fmea/reducers'\nimport {routes as routesfmea,menuitems as menuitemsfmea} from './mod/fmea';\n",
+      "modules": "\nred={...red,reducermodfmea};\nrc=[...rc,reducercommonfmea];\nsty=[...sty,'/modfmea.css','/reactsortabletree.css'];\nrot=[...rot,...routesfmea];\nmen=[...men,...menuitemsfmea];\n"
+    },
+    "backend/modules.js": {
+      "modules": "\nmodels=[...models];\napi=[...api];\n"
+    }
+  }
+}

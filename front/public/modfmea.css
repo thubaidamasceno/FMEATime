@@ -1,0 +1,159 @@
+
+button.fmea-node-btn {
+    border: none;
+    padding: 0;
+    }
+
+input.fmea-tree-input {
+    width: 100%;
+    font-weight: normal;
+}
+
+.fmea-home-page {
+    /* position: absolute; */
+    top: 4em;
+    position: static!important;
+    height: 100%;
+    width: 100%;
+    left: 2em;
+    bottom: 1em;
+    right: 2em;
+    /* grid: 64px / 50%; */
+    /* display: grid; */
+    padding-bottom: 2em;
+}
+
+.fmea-home-page {
+    /* overflow-y: scroll; */
+}
+
+.rst__rowLabel {
+    width: 100%;
+}
+
+.fmea-home-toolbar {
+    /* grid-column: 1 / span 2; */
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+button.MuiButtonBase-root.MuiFab-root.fmea-home-toolbar-btn {
+    margin: 0px 5px;
+}
+
+.fmea-filename {
+    width: 30em;
+    margin: 5px 20px!important;
+}
+
+form.rjsf {
+    /* overflow-y: scroll; */
+}
+
+.fmea-selector {
+    display: inline-block;
+    min-width: 30em;
+    margin: 5px 20px!important;
+}
+
+.fmea-app-page {
+    
+/* height: 100%; */
+    
+position: fixed;
+    
+/* width: 100%; */
+    
+top: 4em;
+    
+/* height: 100%; */
+    
+left: 2em;
+    
+bottom: 1em;
+    
+right: 2em;
+}
+
+.fmea-tree-title:hover {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.fmea-tree-titleHover {
+    background-color: #3f51b5;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    width: 100%;
+    height: 100%;
+}
+
+.fmea-home-toolbar-buttons {
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.Pane.vertical.Pane2 {
+    padding: 10px;
+    overflow-y: scroll;
+    height: calc(100% - 45px);
+}
+.fmea-editortree-cont {
+    height: 100%;
+    background-color: lightgray;
+}
+
+.react-bootstrap-table thead {
+/*     display: none; */
+}
+
+.MuiAccordionSummary-content.Mui-expanded {}
+
+.fmea-CompFuncsEditor {
+    padding: 10px 3px;
+    /* border: black 1px solid; */
+}
+
+.fmea-CompFuncsContainer {
+    /* border: 1px black solid; */
+    /* padding: 2px 5px; */
+}
+
+.fmea-CompFuncsList {
+    
+/* border: 1px black solid; */
+    
+padding: 5px 5px;
+    
+margin: 3px;
+}
+
+.Pane.vertical.Pane1 {
+    /* border: 1px black solid; */
+}
+
+.fmea-CompFuncsViewer {
+    border: 1px black solid;
+    padding: 5px;
+    margin: 3px;
+}
+
+.fmeaPrint-control-header.fmeaPrint-header-head {
+    grid-template-columns: repeat(3,[col] 150px );
+}
+
+.home-page {
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: flex-end;
+}

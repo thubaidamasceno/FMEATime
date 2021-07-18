@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*!
+  Ionicons, v2.0.1
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face{
+    font-family:"Ionicons";
+    src:url("ionicons.eot");
+    src:url("ionicons_iefix.eot")format("embedded-opentype"),
+    url("ionicons.ttf")format("truetype"),
+    url("ionicons.woff")format("woff"),
+    url("ionicons.svg") format("svg");
+}
+
+.ionicons, .ion-close-round:before, .ion-edit:before, .ion-gear-a:before, .ion-pound:before, .ion-thumbsup:before, .ion-trash-a:before {
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.ion-close-round:before {
+    content: "\f129"
+}
+
+.ion-edit:before {
+    content: "\f2bf"
+}
+
+.ion-gear-a:before {
+    content: "\f13d"
+}
+
+.ion-pound:before {
+    content: "\f219"
+}
+
+.ion-thumbsup:before {
+    content: "\f251"
+}
+
+.ion-trash-a:before {
+    content: "\f252"
+}
+
+
+button.fmea-node-btn {}
