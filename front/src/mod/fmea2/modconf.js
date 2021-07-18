@@ -14,7 +14,7 @@ const c = {
     nor: (s) => s
 };
 
-export const txt = {
+const txt = {
     g, n, c,
     _: undefined,
     //
@@ -161,7 +161,7 @@ const expand = (leaf, Parent = '') => {
     }
     return _mlist;
 };
-export const modelList = expand(modelTree);
+const modelList = expand(modelTree);
 // Regras:
 // IDs não podem ser alterados
 // path_ é composto pelos ID dos pais
@@ -174,9 +174,9 @@ var act = {
 };
 for (let k in act)
     act[k] = k;
-export const Act = act;
+const Act = act;
 
-var at_ = {};
+var at = {};
 [
     'FMEA2_ACT',
     'REDIRECT_TO',
@@ -187,10 +187,9 @@ var at_ = {};
     'FMEA2_CHANGETREE',
     'FMEA2_NODECLICK',
     'FMEA2_ACT_FUNCS',
-].map(v => at_[v] = v);
+].map(v => at[v] = v);
 
-export const at = at_;
-export const pathfier = (v) => {
+const pathfier = (v) => {
     return v.replace(/#/g, '.childs.').split(/[.:\/#]/)
 };
 
