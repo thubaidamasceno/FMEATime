@@ -1,5 +1,8 @@
 # FMEATime - Fail Mode and Effect Analisys Tool
 
+
+[Acesse aqui o FMEATime](https://demo.fmeatime.damasceno.pro)
+
 O FMEATime é um sistema de apoio à realização da FMEA (Fail Mode and Effect Analisys ou Análise de Efeito e Modo de Falha).
 
 Essencialmente, a FMEA pode ser feita usando formulários (úteis durante o preenchimento em chão-de-fábrica) e pode contar ainda com planilhas eletrônicas, o que facilita sua visualização, modificação, cópia, etc. Em organizações médias, porém, a realização da FMEA pode ser bastante trabalhosa, pois pode envolver numerosos e complexos equipamentos. Dificuldades ainda maiores surgem quando a FMEA é realizada 'por muitas mãos' e a longo prazo.
