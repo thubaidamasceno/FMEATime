@@ -9,7 +9,7 @@ import {connect} from "react-redux";
 import {LOGOUT, SETTINGS_PAGE_UNLOADED, SETTINGS_SAVED,} from "../constants/actionTypes";
 // import UpFile from "../mod/upload/UpFile";
 // import UpPhoto from "../mod/upload/UpPhoto";
-import abl from "../ability";
+
 
 class SettingsForm extends React.Component {
     constructor() {
@@ -181,18 +181,6 @@ const mapDispatchToProps = (dispatch) => ({
 class Settings extends React.Component {
 
     render() {
-
-        if (!abl(this.props.role, 'open', 'usuarios'))
-            return (
-                <div className="home-page">
-                    <div className="container page">
-                        <div style={{textAlign: 'center'}}>
-                            <h3>O acesso a esse módulo não é permitido para o seu nível de acesso!</h3>
-                            <h4>Contacte o gerente do sistema.</h4>
-                        </div>
-                    </div>
-                </div>
-            );
         return (
             <div className="settings-page">
                 <div className="container page">

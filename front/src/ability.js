@@ -7,7 +7,6 @@ const roles = {
         {action: 'open', subject: ['usuarios']},
     ],
     user: {},
-    demo: {},
     guest: {},
 };
 
