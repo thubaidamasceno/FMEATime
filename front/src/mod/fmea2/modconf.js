@@ -194,4 +194,4 @@ export const pathfier = (v) => {
     return v.replace(/#/g, '.childs.').split(/[.:\/#]/)
 };
 
-module.exports = {modelTree, modelList, at, txt, pathfier, Act};
+// module.exports = {modelTree, modelList, at, txt, pathfier, Act};
