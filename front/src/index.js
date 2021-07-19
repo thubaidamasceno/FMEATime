@@ -31,7 +31,7 @@ const startApp = () => {
         ,
         document.getElementById('root')
     );
-    registerServiceWorker();
+    // registerServiceWorker();
 };
 const inicia = () => {
     if (window.cordova) {
