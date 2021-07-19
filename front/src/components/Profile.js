@@ -9,6 +9,7 @@ import {
   PROFILE_PAGE_UNLOADED
 } from '../constants/actionTypes';
 import {Link,withRouter} from 'react-router-dom';
+import abl from "../ability";
 
 const EditProfileSettings = props => {
   if (props.isUser) {
@@ -83,51 +84,63 @@ class Profile extends React.Component {
     const isUser = this.props.currentUser &&
       this.props.profile.username === this.props.currentUser.username;
 
-    return (
-      <div className="profile-page">
 
-        <div className="user-info">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-md-10 offset-md-1">
+    if (abl(this.props.role, 'open', 'usuarios'))
+      return (
+          <div className="profile-page">
 
-                <img src={profile.image} className="user-img" alt={profile.username} />
-                <h4>{profile.username}</h4>
-                <p>{profile.bio}</p>
+            <div className="user-info">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xs-12 col-md-10 offset-md-1">
 
-                <EditProfileSettings isUser={isUser} />
-                {/*<FollowUserButton*/}
-                {/*  isUser={isUser}*/}
-                {/*  user={profile}*/}
-                {/*  follow={this.props.onFollow}*/}
-                {/*  unfollow={this.props.onUnfollow}*/}
-                {/*  />*/}
+                    <img src={profile.image} className="user-img" alt={profile.username} />
+                    <h4>{profile.username}</h4>
+                    <p>{profile.bio}</p>
+
+                    <EditProfileSettings isUser={isUser} />
+                    {/*<FollowUserButton*/}
+                    {/*  isUser={isUser}*/}
+                    {/*  user={profile}*/}
+                    {/*  follow={this.props.onFollow}*/}
+                    {/*  unfollow={this.props.onUnfollow}*/}
+                    {/*  />*/}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="container">
+              <div className="row">
+
+                <div className="col-xs-12 col-md-10 offset-md-1">
+
+                  {/*<div className="articles-toggle">*/}
+                  {/*  {this.renderTabs()}*/}
+                  {/*</div>*/}
+
+                  {/*<ArticleList*/}
+                  {/*  pager={this.props.pager}*/}
+                  {/*  articles={this.props.articles}*/}
+                  {/*  articlesCount={this.props.articlesCount}*/}
+                  {/*  state={this.props.currentPage} />*/}
+                </div>
 
               </div>
             </div>
+
           </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-
-            <div className="col-xs-12 col-md-10 offset-md-1">
-
-              {/*<div className="articles-toggle">*/}
-              {/*  {this.renderTabs()}*/}
-              {/*</div>*/}
-
-              {/*<ArticleList*/}
-              {/*  pager={this.props.pager}*/}
-              {/*  articles={this.props.articles}*/}
-              {/*  articlesCount={this.props.articlesCount}*/}
-              {/*  state={this.props.currentPage} />*/}
+      );
+    return (
+        <div className="home-page">
+          <div className="container page">
+            <div style={{textAlign:'center'}}>
+              <h3>O acesso a esse módulo não é permitido para o seu nível de acesso!</h3>
+              <h4>Contacte o gerente do sistema.</h4>
             </div>
-
           </div>
         </div>
-
-      </div>
     );
   }
 }

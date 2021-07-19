@@ -1,5 +1,5 @@
 c:
-cd \h\proj\fmeatime
+cd \h\proj\ft2
 set NODE_ENV = 'production'
 
 git commit -a -m ok
