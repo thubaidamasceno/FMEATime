@@ -139,7 +139,8 @@ class App extends React.Component {
                 >
                     <div className={classes.drawerHeader}/>
                     <Switch>
-                        <Route exact path="/" component={() => (<Home/>)}/>
+                        <Route exact path="/" component={() => (<Login/>)}/>
+                        <Route exact path="/sobre" component={() => (<Home/>)}/>
                         <Route path="/login" component={() => (<Login/>)}/>
                         <Route path="/register/:tipo" component={() => (<Register/>)}/>
                         <Route exact path="/register" component={() => (<Register/>)}/>
